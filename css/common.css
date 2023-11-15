@@ -1,0 +1,16 @@
+
+:root{
+    --mainColor : #583cf2;
+    --btnColor : #1e3a8b;
+    --whiteColor : #fff;
+    --blackColor : #222;
+    --bold : 700;
+    --kor : 'Noto Sans KR';
+    --eng : 'Titillium Web';
+}
+.inner{
+    max-width: 1340px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
