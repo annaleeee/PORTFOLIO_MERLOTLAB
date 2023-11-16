@@ -1030,6 +1030,11 @@ header > .inner{
     justify-content: space-between;
     border-bottom: 1px solid var(--whiteColor);
 }
+#map{
+    margin-top: 60px;
+    width: 60%;
+    height: 350px;
+}
 
 @media all and (min-width:768px) and (max-width:1023px){
     .section_5{
@@ -1051,6 +1056,9 @@ header > .inner{
     }
     .location_btn_wrap{
         margin-top: 60px;
+    }
+    #map{
+        width: 80%;
     }
 }
 
@@ -1077,6 +1085,9 @@ header > .inner{
     }
     .location_btn_wrap{
         margin-top: 40px;
+    }
+    #map{
+        width: 100%;
     }
 }
 
