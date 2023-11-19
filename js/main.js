@@ -2,15 +2,19 @@ $(document).ready(function(){
 
     // section_1_main_slide
     $('.section_1').slick({
-        prevArrow: '.main_pager .bottom_nav li',
-        nextArrow: '.main_pager .bottom_nav li',
-        // appendDots: '.main_pager .bottom_nav li',
+        prevArrow: false,
+        nextArrow: false,
         autoplay: true,
         autoplaySpeed: 3000,
         speed: 1000,
         fade: true
     });
     
+    $('.bottom_nav li').click(function(){
+        let slideIndex = $(this).data('slide-index');
+        $('.section_1').slick('slickGoTo', slideIndex);
+    });
+
     // section_3_slide
     
     
