@@ -44,7 +44,9 @@ header > .inner{
     background-color: var(--mainColor);
     cursor: pointer;
 }
-
+.menu_wrap .list{
+    display: none;
+}
 
 @media all and (max-width:767px){
     header{
@@ -548,6 +550,7 @@ header > .inner{
         font-size: 13px;
     }
     /* business_wrap_1_end */
+    
     .business_wrap_2{
         flex-direction: column;
     }
@@ -577,33 +580,25 @@ header > .inner{
 /* --------section_2_end---------- */
 .section_3{
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .section_3_bg{
     width: 100%;
     height: 500px;
     background: #171d3d url(../img/section_3/main_technology_bg.jpg) no-repeat bottom 140px right;
-   padding-top: 100px;
+    padding-top: 100px;
 }
 .slide_sub_txt{
     color: var(--whiteColor);
     font-size: 18px;
     opacity: .6;
+    margin-bottom: 15px;
 }
 .section_3_bg h4{
     font-size: 50px;
     color: var(--whiteColor);
     font-family: var(--eng);
-    margin: 10px 0 40px;
-}
-.arrow_wrap > i{
-    color: var(--whiteColor);
-}
-.fa-chevron-left::after{
-    content: "ㅣ";
-    display: inline-block;
-    margin: 0 14px;
-    opacity: .4;
+    margin: 10px 0 10px;
 }
 .slide_mask{
     position: relative;
@@ -628,6 +623,7 @@ header > .inner{
     display: flex;
     position: relative;
     z-index: 2;
+    pointer-events: none;
 }
 .slide_wrap > li{
     width: 40%;
@@ -656,12 +652,12 @@ header > .inner{
 .slide_img{
     overflow: hidden;
 }
-.slide_wrap img{
+/* .slide_wrap img{
     transition: all .5s;
 }
 .slide_wrap > li:hover img {
     transform: scale(1.1);
-}
+} */
 
 @media all and (min-width:768px) and (max-width:1023px){
     .section_3{
@@ -680,14 +676,12 @@ header > .inner{
     }
     .slide_mask{
         position: initial;
-        /* position: static */
     }
     .slide_mask > .inner{
         width: 100%;
         padding: 40px 0 0 20px;
     }
     .slide_wrap{
-        overflow: hidden;
         gap: 20px;
     }
     .slide_wrap > li{
@@ -723,19 +717,19 @@ header > .inner{
     }
     .slide_sub_txt{
         font-size: 15px;
+        margin-top: 25px;
     }
     .section_3_bg h4{
         font-size: 30px;
     }
     .slide_mask{
         position: initial;
-        /* position: static */
     }
     .slide_mask > .inner{
         padding: 40px 20px 0;
     }
     .slide_wrap{
-        overflow: hidden;
+        width: 100%;
         gap: 20px;
     }
     .slide_wrap > li{
