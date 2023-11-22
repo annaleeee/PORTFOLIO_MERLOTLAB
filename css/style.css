@@ -15,37 +15,68 @@ header > .inner{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 .logo{
     width: 155px;
     flex-shrink: 0;
 }
-.menu_wrap{
+.gnb{
     max-width: 1020px;
     width: 90%;
     height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    height: 40px;
+    overflow: hidden;
 }
-.menu_wrap > li{
+.menu_wrap{
+    display: flex;
+}
+.menu_wrap > .menu_list_wrap{
     width: 20%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .2s;
+    position: relative;
 }
-.menu_wrap a{
+.menu_list_wrap a{
     color: var(--whiteColor);
     text-transform: uppercase;
 }
-.menu_wrap > li:hover{
+.menu_wrap > .menu_list_wrap:hover{
     background-color: var(--mainColor);
     cursor: pointer;
 }
-.menu_wrap .list{
+.list{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    z-index: 999;
+}
+.list li{
+    color: var(--whiteColor);
+    padding: 8px 0;
+    opacity: .6;
+    font-size: 14px;
+}
+.list li:hover{
+    opacity: 1;
+    
+}
+.gnbBg{
+    position: absolute;
+    top: 100px;
+    left: 0;
     display: none;
+    width: 100%;
+    height: 150px;
+    background-color: #232323;
 }
 
 @media all and (max-width:767px){

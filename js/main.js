@@ -1,5 +1,18 @@
 $(document).ready(function(){
 
+    // header_menu_list
+    $('.gnb').mouseover(function(){
+        $(this).stop().animate({
+            height: 180
+        });
+        $('.gnbBg').stop().slideDown();
+    }).mouseout(function(){
+        $(this).stop().animate({
+            height: 40
+        });
+        $('.gnbBg').stop().slideUp();
+    });
+    
     // section_1_main_slide
     $('.section_1').slick({
         prevArrow: false,
