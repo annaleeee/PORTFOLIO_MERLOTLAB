@@ -78,7 +78,6 @@ header > .inner{
     height: 150px;
     background-color: #232323;
 }
-
 @media all and (max-width:767px){
     header{
         height: 80px;
@@ -121,17 +120,29 @@ header > .inner{
         height: 2px;
         background-color: var(--whiteColor);
     }
+    /* .gnbBg{
+        display: none;
+    } */
 }
 
 @media all and (min-width:768px) and (max-width:1023px){
     header{
-        height: 90px;
+        height: 130px;
+    }
+    header > .inner{
+        display: block;
+    }
+    .logo{
+        margin-top: 30px;
     }
     .menu_wrap{
-        width: 70%;
+        margin: 10px 50px 0 0;
     }
-    .menu_wrap a{
-        font-size: 15px;
+    .list{
+        top: 50px;
+    }
+    .gnbBg{
+        top: 100px;
     }
 }
 
@@ -624,12 +635,13 @@ header > .inner{
     font-size: 18px;
     opacity: .6;
     margin-bottom: 15px;
+    margin-left: 10px
 }
 .section_3_bg h4{
     font-size: 50px;
     color: var(--whiteColor);
     font-family: var(--eng);
-    margin: 10px 0 10px;
+    margin: 10px;
 }
 .slide_mask{
     position: relative;
