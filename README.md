@@ -1,6 +1,6 @@
 # PORTFOLIO_MERLOTLAB 💫
 <br>
-<p align="center"><img src="./img/black_logo.png" width="200"></p>
+<p align="center"><img src="./img/logo_black.png" width="200"></p>
 
 # 📖 Description
 [메를로랩] 사이트를  리디자인한 프로젝트입니다.
