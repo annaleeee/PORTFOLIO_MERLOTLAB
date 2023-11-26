@@ -7,7 +7,7 @@
 <br>
 
 ### 📌 개발 기간
-
+2021.11
 
 ### 📌 Stacks
 #### [Environment]
@@ -19,3 +19,7 @@ JavaScript, jQuery, Swiper
 <br>
 # 🖥 화면 구성
 #### [PC]
+
+#### [TABLET]
+
+#### [MOBILE]
