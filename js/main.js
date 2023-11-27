@@ -12,7 +12,26 @@ $(document).ready(function(){
         });
         $('.gnbBg').stop().slideUp();
     });
-    
+
+    // m_navbar 햄버거 메뉴
+    $('.header_m_menu').click(function(){
+        $('nav').animate({right:'0'}, 300);
+        $('.bkbg').fadeIn();
+    });
+    $('.close_m_menu').click(function(){
+        $('nav').animate({right:'-250px'}, 200);
+        $('.bkbg').fadeOut();
+    });
+    $('.bkbg').click(function(){
+        $('nav').animate({right:'-250px'}, 200);
+        $(this).fadeOut();
+    });
+
+    $('.dropDown_title').click(function(){
+        $(this).siblings().find('.dropDown_list').slideUp();
+        $(this).find('.dropDown_list').slideToggle();
+    });
+
     // section_1_main_slide
     $('.section_1').slick({
         prevArrow: false,

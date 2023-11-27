@@ -77,6 +77,10 @@ header > .inner{
     width: 100%;
     height: 150px;
     background-color: #232323;
+    opacity: .7;
+}
+.dropDown{
+    display: none;
 }
 @media all and (max-width:767px){
     header{
@@ -84,6 +88,10 @@ header > .inner{
     }
     .logo{
         width: 125px;
+    }
+    .gnb{
+        width: 0;
+        top: -500px;
     }
     .menu_wrap{
         display: none;
@@ -120,12 +128,97 @@ header > .inner{
         height: 2px;
         background-color: var(--whiteColor);
     }
-    /* .gnbBg{
+    .gnbBg{
         display: none;
-    } */
+    }
+   .bkbg{
+        display: none;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.6);
+    }
+    header nav{
+        position: fixed; 
+        right: -250px; 
+        top: 0;
+        background-color: #eaeaea;
+        width: 250px;
+        height: 100vh;
+        padding: 80px 20px;
+    }
+    nav .d1{
+        margin-top: 60px;
+    }
+    .dropDown a{
+        line-height: 50px;
+        
+    }
+    .close_m_menu{
+        position: relative;
+        float: right;
+        width: 30px;
+        height: 30px;
+        background-color: lightsalmon;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .close_m_menu > span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        width: 2px;
+        height: 20px;
+        background-color: #fff;
+    }
+    .close_m_menu > span:nth-child(2){
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    .dropDown{
+        display: block;
+        margin: 80px 0 0 10px;
+    }
+    .dropDown_title a{
+        font-weight: 600;
+        opacity: .8;
+        position: relative;
+    }
+    .dropDown_title a::after{
+        content: "";
+        display: inline-block;
+        width: 0%;
+        height: 50%;
+        background-color: lightsalmon;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: all .3s;
+    }
+    .dropDown_title span{
+        position: relative;
+        z-index: 30;
+        font-size: 18px;
+    }
+    .dropDown_title a:hover::after{
+        width: 100%;
+    }
+    .dropDown_list{
+        display: none;
+    }
+    .dropDown_list li{
+        line-height: 200%;
+        font-weight: 600;
+        opacity: .6;
+    }
+    .dropDown_list li:hover{
+        opacity: 1;
+    }
 }
 
-@media all and (min-width:768px) and (max-width:1023px){
+@media all and (min-width:768px) and (max-width:1170px){
     header{
         height: 130px;
     }
@@ -215,7 +308,7 @@ header > .inner{
 .mo_break{
     display: none;
 }
-/* --section_1_end-- */
+/* ----section_1_end---- */
 .main_pager > .inner{
     position: relative;
 }
