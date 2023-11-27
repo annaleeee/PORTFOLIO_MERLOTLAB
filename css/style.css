@@ -1397,3 +1397,19 @@ footer{
         opacity: .5;
     }
 }
+/* ----footer_end---- */
+#top_btn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    font-size: 35px;
+    border-top: 2px solid rgba(0, 0, 0, .8);
+    opacity: .8;
+    z-index: 999;
+}
+#top_btn.active{
+    color: var(--whiteColor);
+    border-top: 2px solid var(--whiteColor);
+}
+/* ----top_btn_end---- */

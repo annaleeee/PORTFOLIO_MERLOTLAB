@@ -114,4 +114,37 @@ $(document).ready(function(){
     
     marker.setMap(map);
     
+    // top_btn
+    let topBtn = $('#top_btn');
+    topBtn.hide();
+    
+    $(window).scroll(function(){
+        if($(this).scrollTop()>500){
+            topBtn.fadeIn();
+        }
+        else{
+            topBtn.fadeOut();
+        }
+    });
+    
+    topBtn.on('click', function(){
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    });
+    
+    // top_btn footer에서 색상 변경
+    $(window).scroll(function(){
+        let scrollPosition = $(window).scrollTop();
+        let footerPosition = $('.footer').offset().top - $(window).height(); 
+    
+        if (scrollPosition > footerPosition){
+            topBtn.addClass('active');
+        } else {
+            topBtn.removeClass('active');
+        }
+    });
+
 });
