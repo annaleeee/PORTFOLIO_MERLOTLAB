@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    
     // header_menu_list
     $('.gnb').mouseover(function(){
         $(this).stop().animate({
@@ -75,13 +75,13 @@ $(document).ready(function(){
     function checkboundary() { // slider의 시작점과 끝점을 체크하여 boundary가 초과하지 않도록 해주는 함수
         let outer = slider.getBoundingClientRect();
         let inner = innerSlider.getBoundingClientRect();
-      
-        if (parseInt(innerSlider.style.left) > 0) {
-          innerSlider.style.left = "0px"
-        } else if (Number(innerSlider.style.left.replace("px", ""))< inner.width * -1){
-            // 모바일일경우 * -1.25
-          innerSlider.style.left = `-${inner.width}px`
-        }
+        
+            if (parseInt(innerSlider.style.left) > 0) {
+              innerSlider.style.left = "0px";
+            } else if (Number(innerSlider.style.left.replace("px", "")) < inner.width * -1){
+              innerSlider.style.left = `-${inner.width}px`;
+            }
+        
     };
 
     slider.addEventListener("mousemove", e => {
@@ -113,7 +113,7 @@ $(document).ready(function(){
     });
     
     marker.setMap(map);
-    
+
     // top_btn
     let topBtn = $('#top_btn');
     topBtn.hide();
@@ -146,5 +146,5 @@ $(document).ready(function(){
             topBtn.removeClass('active');
         }
     });
-
+    
 });

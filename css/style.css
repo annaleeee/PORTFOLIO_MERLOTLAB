@@ -399,7 +399,7 @@ header > .inner{
     }
     .circle_arrow{
         background: none;
-        margin-left: 0;
+        margin-left: 5px;
     }
     .bottom_nav{
         flex-direction: column;
@@ -420,6 +420,7 @@ header > .inner{
         font-size: 14px;
         margin-top: 35px;
     }
+    
     
 }
 
@@ -781,9 +782,10 @@ header > .inner{
     margin-bottom: 15px;
 }
 .slide_txt_wrap > p{
-    font-size: 18px;
-    opacity: .7;
+    font-size: 17px;
+    opacity: .5;
     line-height: 24px;
+    font-weight: 600;
 }
 .slide_img{
     overflow: hidden;
@@ -821,7 +823,6 @@ header > .inner{
         gap: 20px;
     }
     .slide_wrap > li{
-        width: 50%;
         padding-right: 0;
     }
     .slide_txt_wrap{
@@ -869,8 +870,10 @@ header > .inner{
         gap: 20px;
     }
     .slide_wrap > li{
-        width: 50%;
         padding-right: 0;
+    }
+    .slide_wrap li:last-child{
+        margin-right: 30px;
     }
     .slide_txt_wrap{
         padding: 20px 0 0;
@@ -883,8 +886,8 @@ header > .inner{
         margin-top: 10px;
     }
     .slide_txt_wrap > p{
-        font-size: 14px;
         line-height: 19px;
+        font-size: 15px;
     }
 }
 
