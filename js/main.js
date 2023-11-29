@@ -15,15 +15,15 @@ $(document).ready(function(){
 
     // m_navbar 햄버거 메뉴
     $('.header_m_menu').click(function(){
-        $('nav').animate({right:'0'}, 300);
+        $('.m_gnb').animate({right:'0'}, 300);
         $('.bkbg').fadeIn();
     });
     $('.close_m_menu').click(function(){
-        $('nav').animate({right:'-250px'}, 200);
+        $('.m_gnb').animate({right:'-250px'}, 200);
         $('.bkbg').fadeOut();
     });
     $('.bkbg').click(function(){
-        $('nav').animate({right:'-250px'}, 200);
+        $('.m_gnb').animate({right:'-250px'}, 200);
         $(this).fadeOut();
     });
 
@@ -93,7 +93,6 @@ $(document).ready(function(){
         checkboundary();
 
     });
-
     
     // map_api
     let mapContainer = document.getElementById('map'), 
