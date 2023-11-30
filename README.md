@@ -56,4 +56,16 @@ nav 태그에 각각의 클래스명을 부여하여 구분해주었음
 ## 1️⃣ draggable-slider
 <img src="./README_img/draggable_slider.png" width="90%">
 
+<br>
+
+## 2️⃣ map api 가져오기
+<img src="./README_img/map_api.png" width="90%">
+
+##### 1) kakao developers 회원가입
+##### 2) API 사용하기 -> 애플리케이션 추가하기
+##### 3) 카카오맵에서 제공하고 있는 코드에 발급받은 API 키 넣기 
+
+
+
+
 
